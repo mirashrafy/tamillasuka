@@ -28,6 +28,7 @@
 
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
 
     body {
@@ -72,8 +73,10 @@
 
     .page {
       width: min(100%, 1920px);
+      max-width: 100%;
       margin: 0 auto;
       isolation: isolate;
+      overflow: hidden;
     }
 
     .hero {
@@ -484,7 +487,9 @@
       }
 
       h1 {
-        font-size: clamp(2.72rem, 15vw, 4.2rem);
+        max-width: 100%;
+        font-size: clamp(2.45rem, 12.4vw, 3.4rem);
+        overflow-wrap: anywhere;
       }
 
       .subhead {
